@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>srcwdq/App.js</code> and save to reload. SISOMA IL MUSTAFA
+          Edit <code>srcwdq/App.js</code> and save to reload.random text
         </p>
         <a
           className="App-link"
