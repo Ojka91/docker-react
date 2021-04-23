@@ -9,6 +9,16 @@ before_install:
 script:
   - docker run -e CI=true docker-react npm run test
 
+deploy:
+  provider: elasticbeanstalk
+  region: "eu-west-1"
+  app: "OscarDocker-React"
+  env: "Oscardockerreact-env"
+  bucket_name: "elasticbeanstalk-eu-west-1-906161076658"
+  bucket_path: "OscarDocker-React"
+  on:
+    branch: master
+
 branches:
   only:
     - master
